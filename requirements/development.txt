@@ -1,0 +1,14 @@
+-r base.txt
+
+# Testing
+#
+# pytest==6.2.2
+# pytest-mock==3.5.1  # https://github.com/pytest-dev/pytest-mock/
+
+# Code quality
+#
+flake8==3.9.2  # https://github.com/PyCQA/flake8
+flake8-isort==4.0.0  # https://github.com/gforcada/flake8-isort
+flake8-quotes==3.2.0  # https://github.com/zheller/flake8-quotes
+mypy==0.812
+# coverage==5.5
