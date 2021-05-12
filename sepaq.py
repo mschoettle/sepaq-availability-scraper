@@ -71,7 +71,7 @@ if __name__ == '__main__':
         help='retrieve campsites from SEPAQ (IMPORTANT: expensive, do this only once!)',
     )
     parser.add_argument('--parse', action='store_true', help='parse availabilities and output a report')
-    parser.add_argument('--dir', type=Path, help='directory where the data should be stored to and read from', required=True)
+    parser.add_argument('--dir', type=Path, help='directory where data should be stored to/read from', required=True)
 
     optional = parser.add_argument_group('optional arguments for parse option')
     optional.add_argument(
@@ -135,8 +135,9 @@ if __name__ == '__main__':
         last_sub_park = None
         last_camp_site = None
 
-        # TODO: it would be better to iterate over data from campsites
+        # TODO: it would be better to iterate over data from campsites (needs to be recursive)
         # that way the park structure also doesn't have to be replicated on the file system
+        # ie, could just store availabilities in one directory and assign some ID which is stored in campsites.json
         for filepath in filepaths:
             parts = filepath.parts[2:]
             park = parts[0]
