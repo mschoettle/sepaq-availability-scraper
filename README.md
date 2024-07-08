@@ -10,7 +10,7 @@ There's two modes:
 ## How to use
 
 1. Clone this repo
-2. `python3.8 -m venv --prompt 'scraper' .venv`
+2. `python3.12 -m venv --upgrade-deps --prompt 'scraper' .venv`
 3. `source .venv/bin/activate`
 4. `pip install --upgrade pip`
 5. `pip install -r requirements/base.txt`
@@ -52,7 +52,7 @@ For example, you might want to try to find at least `4` nights between `2021-06-
 
 ### Set up development environment
 
-1. `python3.8 -m venv --prompt 'scraper' .venv`
+1. `python3.12 -m venv --upgrade-deps --prompt 'scraper' .venv`
 2. `source .venv/bin/activate`
 3. `pip install --upgrade pip`
 4. `pip install -r requirements/development.txt`
